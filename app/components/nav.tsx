@@ -17,7 +17,7 @@ export function Navbar() {
           <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">
             Portfolio
           </p>
-          <h1 className="text-3xl font-semibold tracking-tight">Ikolay</h1>
+          <h1 className="text-3xl font-semibold tracking-tight">Nikolay Valev</h1>
           <p className="text-sm text-muted-foreground">
             Product-focused engineer building resilient web experiences.
           </p>
@@ -38,7 +38,7 @@ export function Navbar() {
             ))}
           </nav>
           <a
-            href="mailto:hello@ikolay.dev"
+            href="mailto:nikolaivalev@gmail.com"
             className={cn(buttonVariants({ size: 'sm' }), 'rounded-full font-semibold')}
           >
             Let&rsquo;s talk

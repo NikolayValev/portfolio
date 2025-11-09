@@ -2,8 +2,8 @@ import Link from 'next/link'
 import { Github, Linkedin, Rss } from 'lucide-react'
 
 const footerLinks = [
-  { label: 'GitHub', href: 'https://github.com/ikolay', icon: Github },
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/ikolay', icon: Linkedin },
+  { label: 'GitHub', href: 'https://github.com/NikolayValev', icon: Github },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/nikolayvalev/', icon: Linkedin },
   { label: 'RSS', href: '/rss', icon: Rss },
 ]
 
@@ -13,7 +13,7 @@ export default function Footer() {
       <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
         <div>
           <p>Built with Next.js, shadcn/ui, and a bias for outcomes.</p>
-          <p>© {new Date().getFullYear()} Ikolay. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Nikolay. All rights reserved.</p>
         </div>
         <div className="flex items-center gap-3">
           {footerLinks.map(({ label, href, icon: Icon }) => (

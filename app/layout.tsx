@@ -13,17 +13,17 @@ import { cn } from '@/lib/utils'
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'Ikolay · Personal Portfolio',
-    template: '%s | Ikolay',
+    default: 'Nikolay · Personal Portfolio',
+    template: '%s | Nikolay',
   },
   description:
     'Product-minded engineer crafting thoughtful web experiences with a shadcn/ui design system.',
   openGraph: {
-    title: 'Ikolay · Personal Portfolio',
+    title: 'Nikolay · Personal Portfolio',
     description:
       'Product-minded engineer crafting thoughtful web experiences with a shadcn/ui design system.',
     url: baseUrl,
-    siteName: 'Ikolay Portfolio',
+    siteName: 'Nikolay Portfolio',
     locale: 'en_US',
     type: 'website',
   },

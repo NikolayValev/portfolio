@@ -14,56 +14,70 @@ import {
 } from '@/components/ui/card'
 
 const stats = [
-  { label: 'Years shipping', value: '8+' },
-  { label: 'Products launched', value: '24' },
-  { label: 'Teams partnered', value: '12' },
+  { label: 'Years of professional experience', value: '3+' },
+  { label: 'Years of building products', value: '8+' },
+  { label: 'Teams partnered', value: '10+' },
 ]
 
 const projects = [
   {
-    title: 'SignalFlow',
+    title: 'StrategemAlgo',
     description:
-      'Realtime incident room that keeps infrastructure, product, and support teams aligned with a shared timeline.',
-    stack: ['Next.js', 'Edge Functions', 'tRPC'],
-    href: 'https://github.com/ikolay',
+      'Trading-indicator SaaS: subscription, client portal, and automated signal publishing. Built for clarity and low friction.',
+    stack: ['Next.js', 'Supabase', 'Stripe', 'Vercel'],
+    href: 'https://www.strategemalgo.com/',
   },
   {
-    title: 'Atlas Playbooks',
+    title: 'BondViz',
     description:
-      'Opinionated automation layer for customer success teams, stitching together HubSpot, Linear, and custom APIs.',
-    stack: ['Remix', 'Prisma', 'Postgres'],
-    href: 'https://github.com/ikolay',
+      'Treasury curve + bond PV toolkit with continuous compounding, PCA factors, and interactive charts.',
+    stack: ['Python', 'Pandas', 'Streamlit'],
+    href: 'https://github.com/NikolayValev', // repo umbrella
   },
   {
-    title: 'Studio Brief',
+    title: 'Collections',
     description:
-      'A brand system builder that exports Figma-ready tokens straight from shadcn/ui primitives.',
-    stack: ['Next.js', 'Shadcn/UI', 'Tailwind'],
-    href: 'https://github.com/ikolay',
+      'Minimalist mood-board and ranking app with user collections, image galleries, and Supabase storage.',
+    stack: ['Next.js', 'Supabase', 'Tailwind'],
+    href: 'https://github.com/NikolayValev',
   },
 ]
 
 const experience = [
   {
-    role: 'Lead Product Engineer',
-    company: 'Northwind Studio',
+    role: 'Associate Software Developer',
+    company: 'Medscape',
     period: '2022 — Present',
     summary:
-      'Partnered with founders to translate napkin sketches into validated SaaS products with accessible design systems.',
+      'Frontend engineer on Medscape’s web ecosystem (Vue 2/3, Pinia, SSR). Shipping high-impact UI at scale.',
     highlights: [
-      'Scaled a shadcn/ui component library across 4 venture-backed products.',
-      'Cut design-to-dev handoff time by 38% with composable Storybook docs.',
+      'Built and maintained a 100+ component Vue library used across Medscape sub-domains; cut integration time by ~25%.',
+      'Implemented mobile infinite-scroll article flows and micro-frontend routes; improved read-through and ad viewability.',
+      'Performance pass on key templates: ~80% faster vs legacy, materially reducing bounce on mobile.',
     ],
   },
   {
-    role: 'Senior Frontend Engineer',
-    company: 'Contoso Cloud',
-    period: '2019 — 2022',
+    role: 'Web Developer Intern',
+    company: 'Superfan',
+    period: '2022',
     summary:
-      'Led the experience pillar for a multi-tenant analytics suite serving 30k DAUs.',
+      'Contributed React/TypeScript features and API integrations for a production web app.',
     highlights: [
-      'Introduced feature flags + progressive rollouts with zero downtime.',
-      'Brought CLS to <0.1 by auditing the design system + shipping skeleton states.',
+      'Integrated REST endpoints and hardened client state flows for reliability under load.',
+      'Debugged and shipped custom components with crisp props, docs, and Storybook usage.',
+      'Partnered with PM/design to deliver small, testable slices on a weekly cadence.',
+    ],
+  },
+  {
+    role: 'Network/IT Technician',
+    company: 'Ramapo College of New Jersey',
+    period: '2018 — 2022',
+    summary:
+      'Kept campus networks healthy; automated repetitive tasks; supported staff and students.',
+    highlights: [
+      'Authored PHP scripts against Infoblox WAPI to manage network devices.',
+      'Installed and configured APs, switches, UPS, and related hardware.',
+      'Maintained site code paths in JavaScript/PHP with incremental cleanups.',
     ],
   },
 ]
@@ -71,39 +85,39 @@ const experience = [
 const channels = [
   {
     label: 'Email',
-    href: 'mailto:hello@ikolay.dev',
+    href: 'mailto:nikolaivalev@gmail.com',
     icon: Mail,
-    handle: 'hello@ikolay.dev',
+    handle: 'nikolaivalev@gmail.com',
   },
   {
     label: 'GitHub',
-    href: 'https://github.com/ikolay',
+    href: 'https://github.com/NikolayValev',
     icon: Github,
-    handle: '@ikolay',
+    handle: '@NikolayValev',
   },
   {
     label: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/ikolay',
+    href: 'https://www.linkedin.com/in/nikolayvalev/',
     icon: Linkedin,
-    handle: '/in/ikolay',
+    handle: '/in/nikolayvalev',
   },
 ]
 
 const pillars = [
   {
-    title: 'Systems thinking',
+    title: 'Performance & reliability',
     description:
-      'Map complex flows, align teams on outcomes, then carve shippable slices that ladder up to the vision.',
+      'Ship fast by default: lean bundles, stable FPS, predictable layouts, and boring uptime.',
   },
   {
-    title: 'Design fluency',
+    title: 'Pragmatic UX',
     description:
-      'Prototype directly with shadcn/ui to keep pixels, states, and semantics in sync with product intent.',
+      'Designs that respect constraints. Clear hierarchies, accessible states, and purposeful motion.',
   },
   {
-    title: 'Operational calm',
+    title: 'Data discipline',
     description:
-      'Establish rituals, release trains, and quality bars so the team can ship fast without breaking trust.',
+      'Decisions tied to metrics: LCP/CLS/TBT, activation, retention, and revenue-aware telemetry.',
   },
 ]
 
@@ -115,15 +129,15 @@ export default function Page() {
           <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-indigo-900/70 to-slate-800 opacity-90" />
           <CardContent className="relative flex flex-col gap-6 p-6 pt-6 md:p-10 md:pt-10">
             <Badge className="w-fit border-white/20 bg-white/10 text-xs uppercase tracking-[0.4em]">
-              Q2 availability
+              Q4 availability
             </Badge>
             <div className="space-y-4">
               <h1 className="text-3xl font-semibold leading-tight tracking-tight md:text-4xl">
-                Crafting calm, resilient web products with shadcn/ui
+                Building fast, resilient web products in Vue &amp; Next.js
               </h1>
               <p className="max-w-2xl text-base text-white/80">
-                I help product teams go from shared intent to production-grade experiences. Together we ship
-                accessible, system-driven interfaces without sacrificing velocity.
+                I turn fuzzy product intent into production interfaces. Systems, accessibility, and
+                performance first—without slowing velocity.
               </p>
             </div>
             <div className="flex flex-wrap gap-3">
@@ -136,7 +150,7 @@ export default function Page() {
                 variant="outline"
                 className="border-white/40 bg-transparent text-white hover:bg-white/10"
               >
-                <a href="mailto:hello@ikolay.dev" className="flex items-center gap-2">
+                <a href="mailto:nikolaivalev@gmail.com" className="flex items-center gap-2">
                   Book intro call
                   <ArrowUpRight className="h-4 w-4" />
                 </a>
@@ -152,11 +166,11 @@ export default function Page() {
                 Current focus
               </CardTitle>
               <CardDescription>
-                Partnering with early-stage teams to ship multi-tenant dashboards & design systems.
+                Shipping dashboards, design systems, and data tools for product teams.
               </CardDescription>
             </CardHeader>
             <CardContent className="flex flex-wrap gap-2">
-              {['Design systems', 'DX tooling', 'Realtime apps'].map((item) => (
+              {['Design systems', 'Trading analytics', 'Vue → Next migrations'].map((item) => (
                 <Badge key={item} variant="outline">
                   {item}
                 </Badge>
@@ -169,9 +183,9 @@ export default function Page() {
               <CardDescription>Signals that guide how I work with teams.</CardDescription>
             </CardHeader>
             <CardContent className="space-y-2 text-sm text-muted-foreground">
-              <p>• Async-first collaborator with overlap in CET ↔ PST.</p>
-              <p>• Fan of small squads, crisp briefs, and living docs.</p>
-              <p>• Measure value through activation, not just velocity.</p>
+              <p>• Brooklyn-based, async-first, overlap with CET ↔ PST when needed.</p>
+              <p>• Small squads, crisp briefs, living docs over slides.</p>
+              <p>• Value measured by activation and retention, not ticket velocity.</p>
             </CardContent>
           </Card>
         </div>
@@ -274,7 +288,7 @@ export default function Page() {
           <CardHeader>
             <CardTitle>Latest writing</CardTitle>
             <CardDescription>
-              Notes on product engineering, systems, and humane tooling.
+              Notes on product engineering, performance, and humane tooling.
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -293,7 +307,7 @@ export default function Page() {
           <CardHeader>
             <CardTitle>Let&rsquo;s build together</CardTitle>
             <CardDescription>
-              I join as an embedded lead, fractional IC, or advisor depending on the stage you&rsquo;re at.
+              I join as an embedded lead, fractional IC, or advisor depending on your stage.
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
